@@ -1,10 +1,12 @@
-NAME ?= DiscussionVerse
+NAME ?= DiscussionVerse-KSU
+
+ETC : = KSU-PROTON-CLANG
 
 DATE := $(shell date "+%Y%m%d-%H%M")
 
-CODE := RedValvet
+CODE := UI2
 
-ZIP := $(NAME)-$(CODE)-$(DATE).zip
+ZIP := $(NAME)-$(CODE)-$(ETC)-$(DATE).zip
 
 EXCLUDE := Makefile *.git* *.jar* *placeholder* *.md*
 
@@ -21,7 +23,7 @@ $(ZIP):
 
 clean:
 	@rm -vf *.zip*
-	@rm -vf zImage
+	@rm -vf Image.gz
 	@rm -vf modules/vendor/lib/modules/*.ko
 	@rm -vf modules/vendor/lib/modules/pronto/*.ko
 	@echo "Done."
