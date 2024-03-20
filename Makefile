@@ -1,6 +1,6 @@
 NAME ?= DiscussionVerse-KSU
 
-ETC : = KSU-PROTON-CLANG
+ETC := KSU-PROTON-CLANG
 
 DATE := $(shell date "+%Y%m%d-%H%M")
 
