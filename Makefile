@@ -4,7 +4,9 @@ DATE := $(shell date "+%Y%m%d-%H%M")
 
 CODE := UI1
 
-ZIP := $(NAME)-$(CODE)-$(DATE).zip
+DEVICE := RMX2185
+
+ZIP := $(NAME)-$(CODE)-$(DEVICE)-$(DATE).zip
 
 EXCLUDE := Makefile *.git* *.jar* *placeholder* *.md*
 
