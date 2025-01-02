@@ -12,7 +12,7 @@ endif
 
 ZIP := $(NAME)-$(CODE)-$(ETC)-$(DATE).zip
 
-EXCLUDE := Makefile *.git* *.jar* *placeholder* *.md*
+EXCLUDE := Makefile *.git* *.jar* *placeholder* *.md* tele.sh changelog.txt
 
 normal: $(ZIP)
 
@@ -22,6 +22,7 @@ $(ZIP):
 	@echo "Generating MD5..."
 	@md5sum "$@" > "$@.md5"
 	@cat "$@.md5"
+	@./tele.sh "$@ changelog.txt
 	@echo "Done."
 
 clean:

@@ -20,7 +20,11 @@ device.name7=tssi_64_armv82_infinix
 device.name8=stone
 device.name9=rock
 device.name10=Infinix-X676C
-device.name11=
+device.name11=marble
+device.name12=emerald
+device.name13=garnet
+
+
 supported.versions=
 supported.patchlevels=
 supported.vendorpatchlevels=
