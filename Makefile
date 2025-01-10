@@ -22,7 +22,7 @@ $(ZIP):
 	@echo "Generating MD5..."
 	@md5sum "$@" > "$@.md5"
 	@cat "$@.md5"
-	@./tele.sh "$@ changelog.txt
+	@./tele.sh "$@" changelog.txt
 	@echo "Done."
 
 clean:
