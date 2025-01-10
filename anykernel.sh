@@ -5,7 +5,7 @@
 # global properties
 properties() { '
 kernel.string=DiscussionVerse by picasso09
-do.devicecheck=1
+do.devicecheck=0
 do.modules=0
 do.systemless=0
 do.cleanup=1
@@ -23,7 +23,7 @@ device.name10=Infinix-X676C
 device.name11=marble
 device.name12=emerald
 device.name13=garnet
-
+device.name14=
 
 supported.versions=
 supported.patchlevels=
